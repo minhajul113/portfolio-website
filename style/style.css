@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+   
+}
+header div{
+    float: left;
+    justify-content: space-between;
+}
+header .logo{
+    margin-left: 100px;
+    padding: 20px;
+}
+header .navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 130px;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    float: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+header .navbar ul li a{
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+header .navbar ul li a:hover{
+    color: #8392FD;
+}
+
+/*section1 start*/
+.section1{
+    background-color: #F9F9FF;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.half1, .half2{
+    width: 35%;
+}
+.half1{
+    margin-left: 150px;
+    margin-bottom: 120px;
+}
+.half2{
+    padding-right: 160px;
+    margin-top: 50px;
+}
+.half2 img{
+    max-width: 100%;
+    height: auto;
+}
+.half1 h3{
+    font-weight: normal;
+}
+.half1 h1{
+    font-size: 60px;
+}
+.half1 p{
+    color: rgba(78, 78, 78, 0.7);
+
+}
+.half1 input{
+    padding: 8px 20px;
+    background-color: #7E98FF;
+    outline: none;
+    color: white;
+    border: 1px solid #7E98FF;
+    font-size: 15px;
+}
+.half1 input:hover{
+    box-shadow: 8px 10px 30px rgba(127,151,255, 0.7);
+    transition: all 0.5s ease-in;
+    outline: none;
+    cursor: pointer;
+}
+/*section1 end*/
+
+/*section2 start*/
+.section2{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 div{
+    width: 40%;
+    margin: 0 auto;
+}
+.section2 img{
+    width: 80%;
+    height: auto;
+}
+.section2 .img2{
+    padding-left: 150px;
+}
+.text2 h3{
+    font-weight: normal;
+    color: rgba(0,0,0, 0.7);
+    font-size: 15px;
+}
+.tex2 h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.text2 p{
+    font-size: 15px;
+    color: rgba(0,0,0, 0.6);
+    width: 80%;
+    text-align: left;
+}
+.text2 input{
+    font-size: 15px;
+    padding: 8px 20px;
+    outline: none;
+    color: white;
+    background-color: #7E98FF;
+    border: 1px solid #7E98FF;
+    border: none;
+}
+.text2 input:hover{
+    box-shadow: 8px 10px 30px rgba(127,151, 255, 0.7);
+    transition: all ease-in 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+/* section 2 end  */
+
+/* Section 3 start */
+.section3{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section3 .sec3text1 h1{
+    font-size: 40px;
+}
+.section3 .sec3text1 p{
+    width: 670px;
+    color: rgba(0,0,0, 0.6);
+    margin: 0 auto;
+
+}
+.section3 .services{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+.ser1, .ser2{
+    width: 100%;
+    overflow: hidden;
+}
+.ser2{
+    padding-top: 30px;
+}
+.services i{
+    font-size: 45px;
+    color:rgba(0,0,0, 0.7);
+}
+.ser1 div, .ser2 div{
+    width: 32%;
+    float: left;
+    padding: 5px;
+    margin: 0 auto;
+}
+.services h1{
+    color:rgba(0,0,0, 0.8);
+    font-size: 18px;
+}
+.services p{
+    color: rgba(0,0,0, 0.6);
+}
+.ser1 div:hover{
+    background-color:rgba(127,151,255, 0.7);
+    color: white;
+    transition: all ease-in 0.3s;
+    transform: scale(1.05);
+}
+.ser2 div:hover{
+    background-color:rgba(127,151,255, 0.7);
+    transition: all ease-in 0.2s;
+    transform: scale(1.05);
+}
+
+.ser2 div:hover p{
+    color: white;
+
+}
+.ser2 div:hover h1{
+    color: white;
+
+}
+.ser2 div:hover i{
+    color: white;
+
+}
+
+.ser1 div:hover p{
+    color: white;
+
+}
+.ser1 div:hover h1{
+    color: white;
+
+}
+.ser1 div:hover i{
+    color: white;
+
+}
+/* Section 3 end */
+
+/* Section 4 start */
+
+.section4{
+    width: 100%;
+    height: 300px;
+    background-color: #8293ff;
+}
+.section4 div{
+    float: left;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+.section4 h1, .sec4{
+    text-align: center;
+    color: white;
+}
+.section4 h1{
+    font-size: 40px;
+    line-height: 10px;
+}
+
+
+/* Portfolio start */
+.section5{
+    width: 100%;
+    box-sizing: border-box;
+}
+.section5 .text3{
+    text-align: center;
+    padding: 100px 0;
+}
+.section5 .text3 h1{
+    font-size: 40px;
+    color: rgba(0,0,0, 0.9);
+}
+.section5 .text3 p{
+    color:rgba(78, 78, 78, 0.7);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.section5 .imgg{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.section5 .imgg div{
+    width: 340px;
+    height: 339px;
+    padding-bottom: 80px;
+    text-align: center;
+    
+}
+.section5 .imgg h1{
+    font-size: 20px;
+    color: rgba(0,0,0, 0.9);
+}
+.section5 figure{
+    background: linear-gradient(40deg, #8293ff 40%, #62bdfc 100%);
+    width: 340px;
+    height: 339px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 3%;
+}
+.section5 figure:hover img{
+    opacity: 0.3;
+    transition: all  0.3s ease-in-out;
+    cursor: pointer;
+}
+.section5 .imgg p{
+    color:rgba(78, 78, 78, 0.7);
+    margin-top: -10px;
+}
+/*Portfolio end*/
+
+/* pricing table start  */
+.section6{
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+}
+.section6 .text4{
+    text-align: center;
+    padding: 2% 0;
+}
+.section6 .text4 h1{
+    font-size: 40px;
+    line-height: 0;
+    padding: 15px;
+}
+.section6 .text4 p{
+    color: rgba(0,0,0, 0.6);
+}
+.section6 .card{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.section6 .card1{
+    width: 300px;
+    height: 570px;
+    background-color:rgb(249, 249, 255);
+    text-align: center;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+.section6 .card1 h1{
+    font-size: 50px;
+    padding-top: 8px;
+}
+.section6 .card1 .price{
+    font-size: 35px;
+}
+
+.section6 .card1 input{
+    outline: none;
+    background-color: #8293ff;
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+}
+.section6 .card1:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0, 0.5);
+}
+.section6 .card1:hover input{
+    background-color: rgb(206, 42, 247);
+    color: rgba(255, 255, 255, 0.8);
+    visibility:visible;
+}
+.section6 hr{
+    color: rgba(0,0,0, 0.2);
+}
+.section6 .card1:hover hr{
+    color: rgb(222, 240, 245);
+}
+/* pricing table end */
+
+/* Footer table Start */
+footer{
+    background-color: rgb(4, 9, 30);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    color: white;
+    margin-top: 200px;
+}
+footer .foot{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+footer .foot .foot1 p{
+    color: rgba(255, 255, 255, 0.5);
+}
+footer .foot .foot1 input{
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 150px 10px 10px;
+}
+footer .foot .foot1 button{
+    font-size: 18px;
+    color: white;
+    background-color: #8293ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 13px 8px 7px;
+    border-radius: 5%;
+}
+
+footer .foot .foot1 i{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 5px;
+    text-align: center;
+    margin-left: 2px;   
+    margin-top: 2px;   
+}
+
+footer .foot .foot1 button:hover{
+    background-color: crimson;
+    color: #000000;
+}
+
+/* footer table end */
