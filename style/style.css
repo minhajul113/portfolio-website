@@ -463,7 +463,7 @@ footer .foot .foot1 i:hover{
     }
     .checkbtn{
         display: block;
-        margin-right: -80%;
+        margin-right: 150%;
     }
     header .navbar ul{
         position: fixed;
