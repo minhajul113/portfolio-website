@@ -11,7 +11,6 @@ header{
     top: 0;
     background-color: #fff;
     z-index: 1;
-   
 }
 header div{
     float: left;
@@ -45,6 +44,18 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     color: #8392FD;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0,0,0, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: -340%;
+}
+#check {
+    display: none;
+}
+
 
 /*section1 start*/
 .section1{
@@ -194,16 +205,10 @@ header .navbar ul li a:hover{
 .services p{
     color: rgba(0,0,0, 0.6);
 }
-.ser1 div:hover{
-    background-color:rgba(127,151,255, 0.7);
-    color: white;
-    transition: all ease-in 0.3s;
-    transform: scale(1.05);
-}
-.ser2 div:hover{
+.ser1 div:hover, .ser2 div:hover{
     background-color:rgba(127,151,255, 0.7);
     transition: all ease-in 0.2s;
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .ser2 div:hover p{
@@ -256,8 +261,6 @@ header .navbar ul li a:hover{
     font-size: 40px;
     line-height: 10px;
 }
-
-
 /* Portfolio start */
 .section5{
     width: 100%;
@@ -405,6 +408,10 @@ footer .foot{
     margin: 0 auto;
     margin-top: 120px;
 }
+footer .foot .foot0 p{
+    width: 360px;
+    color: rgba(255, 255, 255, 0.5);
+}
 footer .foot .foot1 p{
     color: rgba(255, 255, 255, 0.5);
 }
@@ -436,7 +443,190 @@ footer .foot .foot1 i{
 
 footer .foot .foot1 button:hover{
     background-color: crimson;
-    color: #000000;
+    color: #34f5db;
+}
+footer .foot .foot1 i:hover{
+    color: #34f5db;  
+}
+/* footer table end */
+
+
+/* mobile header navbar responsive*/ 
+@media (max-width: 768px){
+    header {
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    header .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #F9F9FF;
+        top: 54px;
+        left: -200%;
+        transition: all 0.1s;
+    }
+    header .navbar ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    header .navbar ul li a{
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
-/* footer table end */
+/* mobile sections responsive */
+
+@media (max-width: 768px){
+    .section1{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .half1{
+        margin: auto;
+        padding: 0;
+    }
+    .half1, .half2 {
+        width: 71%;
+      }
+    .half1 h3{
+        font-size: 15px;
+        padding-top: 70px;
+    }
+    .half1 h1{
+        font-size: 25px;
+    }
+    .half2 img{
+        margin-left: 90px;
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+/* section2 start  */
+    .section2{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 150px;
+    }
+    .section2 .img2 img{
+        position: relative;
+        right: 120px;
+    }
+    .section2 div{
+        width: 100%;
+    }
+   .text2{
+        position: relative;
+        left: 15px;
+        text-align: center !important;
+    }
+    .text2 h3{
+        font-size: 12px;
+        color: rgba(0,0,0, 0.8);
+    }
+    .text2 h1{
+        font-size: 30px;
+        color:rgba(0,0,0, 0.9);
+    }
+    .text2 p{
+        font-size: 15px;
+        color: rgba(0,0,0, 0.9);
+        margin-left: 50px !important;
+    }
+    /* section3 start  */
+    .section3{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 400px;
+    }
+    .section3 .sec3text1 h1{
+        font-size: 30px;
+        color: rgba(0,0,0, 0.9);
+    }
+    .section3 .sec3text1  p{
+        width: 80%;
+        text-align: center;
+     
+    }
+    .ser1 div, .ser2 div{
+        clear: left;
+        position: relative;
+        width: 100%;
+        height: auto; 
+    }
+/* section 4 start  */
+    .section4{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 500px;
+    }
+    .section4 div{
+        clear:left;
+        left: 220px;
+    }
+/* section 5 satart  */
+    .section5{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 500px;
+    }
+/* section 6 start  */
+    .section6{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 500px;
+    }
+    .section6 .text4 h1{
+        font-size: 35px;
+    }
+    .section6 .text4 p{
+        width: 80%;
+        margin: auto;
+    }
+    .section6 .card{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        left: 90px;
+    }
+    /* pricing table  */
+    .card1{
+        margin-top: 50px;
+    }
+    
+/* footer star  */
+    footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 120em;
+    }
+    footer .foot{
+        display: block;
+        position: relative;
+        top: 100px;
+    }
+   .foot1 .adp{
+        width: 80%;
+    }
+}
